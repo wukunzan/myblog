@@ -24,7 +24,7 @@ class PostReplied extends Notification implements ShouldQueue
     public function via($notifiable)
     {
         //开启通知频道，mail,database
-        return ['database','mail'];
+        return ['database'];
     }
 
     public function toMail($notifiable)
