@@ -21,7 +21,7 @@
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
                 @guest
-                    <a href="{{ url('socials/qq/authorizations') }}" ><img src="http://qzonestyle.gtimg.cn/qzone/vas/opensns/res/img/Connect_logo_4.png"></a>
+                   
                     @else
                         @can('manage_contents')
                         <li>
