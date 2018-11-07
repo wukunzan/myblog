@@ -11,7 +11,7 @@
                 <div class="card-body" style="padding-bottom: 0px" >
                     <div class="float-left">
                         <i class="fas fa-bars text-grep"></i> <a href="{{ route('categories.show', $post->category) }}" class="card-link" title="{{ $post->category->title }}">{{ $post->category->title }}</a>
-                        <span class="text-grap">   /  {{ $post->updated_at->diffForHumans() }}</span>
+                        <span class="text-grap">   /创建于{{ $post->created_at->diffForHumans() }}</span>
                     </div>
                     <div class="float-right">
                         <i class="fas fa-user"></i>  <a href="{{ route('users.show', [$post->user_id]) }}" class="card-link text-right text-red">{{ $post->user->name }}</a>
